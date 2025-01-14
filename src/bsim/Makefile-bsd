@@ -1,0 +1,52 @@
+
+## ARM Instruction Simulator           ##
+##         Copyright (C) 2005 by NAIST ##
+##         Primary writer: Y.Nakashima ##
+##                nakashim@is.naist.jp ##
+
+OPTION	      = -DCHECK_CACHE
+PROGRAM       = bsim-bsd
+CC            = gcc
+#CFLAGS       = -O3 -I. -I/usr/local/include $(OPTION)
+CFLAGS        = -O3 -m32 -I. -I/usr/local/include $(OPTION)
+ASFLAGS       = 
+#LDFLAGS      =
+LDFLAGS       = -m32
+#LIBFLAGS      = -L/usr/local/lib -lm -lX11 -pthread
+LIBFLAGS      = -L/usr/local/lib -lm -lX11 -pthread
+DESTDIR	      = $(HOME)/bin
+
+OBJS	      =	bsim.o armfile64.o decode.o exec.o alu.o mul.o vxx.o ld.o st.o \
+		reg.o sim-core.o sim-mreq.o sim-mem.o xdisp.o emax5.o 
+
+SRCS	      =	bsim.c armfile64.c decode.c exec.c alu.c mul.c vxx.c ld.c st.c \
+		reg.c sim-core.c sim-mreq.c sim-mem.c xdisp.c emax5.c
+
+all:		$(PROGRAM)
+
+$(PROGRAM):     $(OBJS)
+		$(CC) $(LDFLAGS) $(OBJS) -o $(PROGRAM) $(LIBFLAGS)
+
+clean:;		rm -f $(OBJS) core *~
+
+test:;		./$(PROGRAM)       -b5000 ../../sample/test/test000
+
+###
+
+bsim.o:		bsim.h
+armfile64.o:	bsim.h
+decode.o:	bsim.h
+exec.o:		bsim.h
+alu.o:		bsim.h
+mul.o:		bsim.h
+vxx.o:		bsim.h
+ld.o:		bsim.h
+st.o:		bsim.h
+reg.o:		bsim.h
+sim-core.o:	bsim.h
+sim-mreq.o:	bsim.h
+sim-mem.o:	bsim.h
+xdisp.o:	bsim.h
+emax5.o:	../conv-c2b/emax5.h ../conv-c2b/emax5lib.c
+
+###
