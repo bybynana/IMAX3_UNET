@@ -1,0 +1,616 @@
+CONV_SELECT= 1
+check1 IC 4 OC 16 D 128 H 128 W 128 K 3
+check2 RMGRP 16 NCHIP 1 IMAP 2
+/dev/uio14: emax6
+/dev/uio15: emax6
+/dev/uio0: dma
+/dev/uio1: dma
+/dev/uio2: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio3: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio4: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio5: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio6: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio7: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio8: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio9: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio10: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio11: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio12: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio13: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/mem
+EMAX7[0].DEPTH=64
+EMAX7[1].DEPTH=64
+EMAX7: NLANE=2 DEPTH=64
+membase: 00000000
+in  : 00000000
+ker : 02000000
+out0: 02001b00
+out1: 0a001b00
+sizeof(int)=4
+sizeof(float)=4
+input is: 
+0.609031 0.837600 0.709305 0.643472 0.563409 0.327656 0.804882 0.801323 0.019373 0.791480 
+ker is: 
+0.189699 0.734625 0.654405 0.168382 0.127445 0.666085 0.100898 0.475161 0.329832 0.853464 
+LANE0 usec: ARM:0 DRAIN:0 CONF:0 REGV:0 RANGE:0 LOAD:0 EXEC:0 total:0
+start_time: 0
+<<<IMAX>>>
+LANE0 usec: ARM:1633 DRAIN:280692 CONF:521 REGV:33326 RANGE:23404 LOAD:252944 EXEC:257091 total:849614
+out1 is: 
+16512:2.805187e+01 16513:1.248035e+01 16514:3.002337e+01 16515:1.404883e+01 16516:2.946667e+01 16517:1.118989e+01 16518:2.842158e+01 16519:1.262855e+01 16520:2.743488e+01 16521:1.068388e+01 
+Num of MULT: orig=0 imax=0
+Failed to open file for out writing.
+LANE0 usec: ARM:1633 DRAIN:280692 CONF:521 REGV:33326 RANGE:23404 LOAD:252944 EXEC:257091 total:849614
+
+CONV_SELECT= 2
+check1 IC 48 OC 32 D 64 H 64 W 64 K 3
+check2 RMGRP 16 NCHIP 1 IMAP 2
+/dev/uio14: emax6
+/dev/uio15: emax6
+/dev/uio0: dma
+/dev/uio1: dma
+/dev/uio2: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio3: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio4: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio5: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio6: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio7: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio8: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio9: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio10: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio11: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio12: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio13: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/mem
+EMAX7[0].DEPTH=64
+EMAX7[1].DEPTH=64
+EMAX7: NLANE=2 DEPTH=64
+membase: 00000000
+in  : 00000000
+ker : 03000000
+out0: 03028800
+out1: 05028800
+sizeof(int)=4
+sizeof(float)=4
+input is: 
+0.075369 0.364766 0.924722 0.411532 0.192994 0.766709 0.866110 0.930008 0.415510 0.887948 
+ker is: 
+0.819672 0.720487 0.778719 0.891462 0.991372 0.408908 0.197658 0.571036 0.678117 0.998270 
+LANE0 usec: ARM:0 DRAIN:0 CONF:0 REGV:0 RANGE:0 LOAD:0 EXEC:0 total:0
+start_time: 0
+<<<IMAX>>>
+LANE0 usec: ARM:8562 DRAIN:966135 CONF:2899 REGV:196925 RANGE:135389 LOAD:823951 EXEC:911917 total:3045782
+out1 is: 
+4160:2.631320e+01 4161:1.550202e+01 4162:2.659382e+01 4163:1.405808e+01 4164:2.916900e+01 4165:1.432645e+01 4166:2.898751e+01 4167:1.507319e+01 4168:2.494567e+01 4169:1.374289e+01 
+Num of MULT: orig=0 imax=0
+Failed to open file for out writing.
+LANE0 usec: ARM:8562 DRAIN:966135 CONF:2899 REGV:196925 RANGE:135389 LOAD:823951 EXEC:911917 total:3045782
+
+CONV_SELECT= 3
+check1 IC 96 OC 64 D 32 H 32 W 32 K 3
+check2 RMGRP 16 NCHIP 1 IMAP 2
+/dev/uio14: emax6
+/dev/uio15: emax6
+/dev/uio0: dma
+/dev/uio1: dma
+/dev/uio2: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio3: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio4: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio5: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio6: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio7: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio8: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio9: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio10: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio11: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio12: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio13: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/mem
+EMAX7[0].DEPTH=64
+EMAX7[1].DEPTH=64
+EMAX7: NLANE=2 DEPTH=64
+membase: 00000000
+in  : 00000000
+ker : 00c00000
+out0: 00ca2000
+out1: 014a2000
+sizeof(int)=4
+sizeof(float)=4
+input is: 
+0.152285 0.011626 0.653713 0.274440 0.145512 0.250977 0.491287 0.464449 0.651311 0.721296 
+ker is: 
+0.517098 0.584123 0.858385 0.265173 0.170748 0.692623 0.263723 0.124036 0.888366 0.744141 
+LANE0 usec: ARM:0 DRAIN:0 CONF:0 REGV:0 RANGE:0 LOAD:0 EXEC:0 total:0
+start_time: 0
+<<<IMAX>>>
+LANE0 usec: ARM:7825 DRAIN:659233 CONF:2810 REGV:190644 RANGE:131084 LOAD:531814 EXEC:498567 total:2021980
+out1 is: 
+1056:2.864631e+01 1057:1.243149e+01 1058:2.598500e+01 1059:1.133246e+01 1060:2.610821e+01 1061:1.232677e+01 1062:2.586437e+01 1063:1.244599e+01 1064:3.023627e+01 1065:1.485994e+01 
+Num of MULT: orig=0 imax=0
+Failed to open file for out writing.
+LANE0 usec: ARM:7825 DRAIN:659233 CONF:2810 REGV:190644 RANGE:131084 LOAD:531814 EXEC:498567 total:2021980
+
+CONV_SELECT= 4
+check1 IC 192 OC 128 D 16 H 16 W 16 K 3
+check2 RMGRP 16 NCHIP 1 IMAP 2
+/dev/uio14: emax6
+/dev/uio15: emax6
+/dev/uio0: dma
+/dev/uio1: dma
+/dev/uio2: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio3: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio4: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio5: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio6: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio7: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio8: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio9: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio10: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio11: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio12: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio13: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/mem
+EMAX7[0].DEPTH=64
+EMAX7[1].DEPTH=64
+EMAX7: NLANE=2 DEPTH=64
+membase: 00000000
+in  : 00000000
+ker : 00300000
+out0: 00588000
+out1: 00788000
+sizeof(int)=4
+sizeof(float)=4
+input is: 
+0.375723 0.350822 0.479008 0.328792 0.255903 0.583365 0.525253 0.191258 0.285467 0.400393 
+ker is: 
+0.648231 0.740371 0.604606 0.535407 0.329944 0.538909 0.863259 0.546826 0.622353 0.677575 
+LANE0 usec: ARM:0 DRAIN:0 CONF:0 REGV:0 RANGE:0 LOAD:0 EXEC:0 total:0
+start_time: 0
+<<<IMAX>>>
+LANE0 usec: ARM:6714 DRAIN:423730 CONF:2616 REGV:177649 RANGE:122205 LOAD:373254 EXEC:374787 total:1480958
+out1 is: 
+272:2.277375e+01 273:9.554792e+00 274:2.187266e+01 275:1.151506e+01 276:2.188027e+01 277:1.282225e+01 278:2.439640e+01 279:1.373915e+01 280:2.634488e+01 281:1.075682e+01 
+Num of MULT: orig=0 imax=0
+Failed to open file for out writing.
+LANE0 usec: ARM:6714 DRAIN:423730 CONF:2616 REGV:177649 RANGE:122205 LOAD:373254 EXEC:374787 total:1480958
+
+CONV_SELECT= 5
+check1 IC 384 OC 256 D 8 H 8 W 8 K 3
+check2 RMGRP 16 NCHIP 1 IMAP 2
+/dev/uio14: emax6
+/dev/uio15: emax6
+/dev/uio0: dma
+/dev/uio1: dma
+/dev/uio2: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio3: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio4: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio5: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio6: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio7: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio8: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio9: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio10: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio11: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio12: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio13: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/mem
+EMAX7[0].DEPTH=64
+EMAX7[1].DEPTH=64
+EMAX7: NLANE=2 DEPTH=64
+membase: 00000000
+in  : 00000000
+ker : 000c0000
+out0: 00ae0000
+out1: 00b60000
+sizeof(int)=4
+sizeof(float)=4
+input is: 
+0.010787 0.534455 0.596695 0.490389 0.536179 0.473457 0.514903 0.328099 0.289927 0.115463 
+ker is: 
+0.815414 0.774962 0.366406 0.296640 0.788863 0.261550 0.615743 0.544788 0.043688 0.673398 
+LANE0 usec: ARM:0 DRAIN:0 CONF:0 REGV:0 RANGE:0 LOAD:0 EXEC:0 total:0
+start_time: 0
+<<<IMAX>>>
+LANE0 usec: ARM:11776 DRAIN:654371 CONF:4467 REGV:306383 RANGE:209355 LOAD:516151 EXEC:496687 total:2199194
+out1 is: 
+72:2.359716e+01 73:1.217966e+01 74:2.335530e+01 75:1.309511e+01 76:2.774643e+01 77:1.321496e+01 80:2.620269e+01 81:1.330203e+01 82:2.564235e+01 83:1.207727e+01 
+Num of MULT: orig=0 imax=0
+Failed to open file for out writing.
+LANE0 usec: ARM:11776 DRAIN:654371 CONF:4467 REGV:306383 RANGE:209355 LOAD:516151 EXEC:496687 total:2199194
+
+CONV_SELECT= 6
+check1 IC 768 OC 512 D 8 H 8 W 8 K 3
+check2 RMGRP 16 NCHIP 1 IMAP 2
+/dev/uio14: emax6
+/dev/uio15: emax6
+/dev/uio0: dma
+/dev/uio1: dma
+/dev/uio2: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio3: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio4: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio5: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio6: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio7: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio8: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio9: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio10: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio11: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio12: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio13: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/mem
+EMAX7[0].DEPTH=64
+EMAX7[1].DEPTH=64
+EMAX7: NLANE=2 DEPTH=64
+membase: 00000000
+in  : 00000000
+ker : 00180000
+out0: 02a00000
+out1: 02b00000
+sizeof(int)=4
+sizeof(float)=4
+input is: 
+0.286295 0.855651 0.622265 0.571574 0.516400 0.198470 0.791381 0.474888 0.830156 0.695482 
+ker is: 
+0.228673 0.639940 0.467414 0.474032 0.136110 0.516524 0.350020 0.990665 0.749979 0.709543 
+LANE0 usec: ARM:0 DRAIN:0 CONF:0 REGV:0 RANGE:0 LOAD:0 EXEC:0 total:0
+start_time: 0
+<<<IMAX>>>
+LANE0 usec: ARM:45547 DRAIN:2613639 CONF:17757 REGV:1216988 RANGE:836988 LOAD:2043800 EXEC:1952043 total:8726765
+out1 is: 
+72:3.076941e+01 73:1.420950e+01 74:2.865557e+01 75:1.347957e+01 76:3.122007e+01 77:1.474926e+01 80:3.210164e+01 81:1.533918e+01 82:3.173970e+01 83:1.563558e+01 
+Num of MULT: orig=0 imax=0
+Failed to open file for out writing.
+LANE0 usec: ARM:45547 DRAIN:2613639 CONF:17757 REGV:1216988 RANGE:836988 LOAD:2043800 EXEC:1952043 total:8726765
+
+CONV_SELECT= 7
+check1 IC 512 OC 256 D 16 H 16 W 16 K 3
+check2 RMGRP 16 NCHIP 1 IMAP 2
+/dev/uio14: emax6
+/dev/uio15: emax6
+/dev/uio0: dma
+/dev/uio1: dma
+/dev/uio2: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio3: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio4: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio5: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio6: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio7: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio8: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio9: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio10: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio11: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio12: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio13: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/mem
+EMAX7[0].DEPTH=64
+EMAX7[1].DEPTH=64
+EMAX7: NLANE=2 DEPTH=64
+membase: 00000000
+in  : 00000000
+ker : 00800000
+out0: 01580000
+out1: 01980000
+sizeof(int)=4
+sizeof(float)=4
+input is: 
+0.407774 0.436389 0.242374 0.906092 0.182888 0.013241 0.107246 0.253179 0.669490 0.660992 
+ker is: 
+0.339171 0.239101 0.971904 0.608201 0.869859 0.975760 0.032816 0.727746 0.546822 0.393639 
+LANE0 usec: ARM:0 DRAIN:0 CONF:0 REGV:0 RANGE:0 LOAD:0 EXEC:0 total:0
+start_time: 0
+<<<IMAX>>>
+LANE0 usec: ARM:33445 DRAIN:2259119 CONF:13822 REGV:947715 RANGE:651808 LOAD:1953443 EXEC:2005421 total:7864776
+out1 is: 
+272:2.700767e+01 273:1.138679e+01 274:2.811164e+01 275:1.314122e+01 276:2.856247e+01 277:1.331801e+01 278:2.646490e+01 279:1.232186e+01 280:2.688534e+01 281:1.367067e+01 
+Num of MULT: orig=0 imax=0
+Failed to open file for out writing.
+LANE0 usec: ARM:33445 DRAIN:2259119 CONF:13822 REGV:947715 RANGE:651808 LOAD:1953443 EXEC:2005421 total:7864776
+
+CONV_SELECT= 8
+check1 IC 256 OC 128 D 32 H 32 W 32 K 3
+check2 RMGRP 16 NCHIP 1 IMAP 2
+/dev/uio14: emax6
+/dev/uio15: emax6
+/dev/uio0: dma
+/dev/uio1: dma
+/dev/uio2: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio3: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio4: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio5: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio6: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio7: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio8: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio9: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio10: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio11: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio12: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio13: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/mem
+EMAX7[0].DEPTH=64
+EMAX7[1].DEPTH=64
+EMAX7: NLANE=2 DEPTH=64
+membase: 00000000
+in  : 00000000
+ker : 02000000
+out0: 02360000
+out1: 03360000
+sizeof(int)=4
+sizeof(float)=4
+input is: 
+0.065081 0.616610 0.549467 0.016799 0.555602 0.143625 0.702816 0.035378 0.031879 0.710292 
+ker is: 
+0.118497 0.551382 0.477685 0.254251 0.547515 0.308091 0.071924 0.216638 0.801548 0.231585 
+LANE0 usec: ARM:0 DRAIN:0 CONF:0 REGV:0 RANGE:0 LOAD:0 EXEC:0 total:0
+start_time: 0
+<<<IMAX>>>
+LANE0 usec: ARM:36852 DRAIN:3515275 CONF:14814 REGV:1015066 RANGE:698490 LOAD:2729724 EXEC:2668782 total:10679006
+out1 is: 
+1056:2.882376e+01 1057:1.265831e+01 1058:3.074301e+01 1059:1.403373e+01 1060:3.461615e+01 1061:1.335285e+01 1062:2.939589e+01 1063:1.369846e+01 1064:2.993411e+01 1065:1.389001e+01 
+Num of MULT: orig=0 imax=0
+Failed to open file for out writing.
+LANE0 usec: ARM:36852 DRAIN:3515275 CONF:14814 REGV:1015066 RANGE:698490 LOAD:2729724 EXEC:2668782 total:10679006
+
+CONV_SELECT= 9
+check1 IC 128 OC 64 D 64 H 64 W 64 K 3
+check2 RMGRP 16 NCHIP 1 IMAP 2
+/dev/uio14: emax6
+/dev/uio15: emax6
+/dev/uio0: dma
+/dev/uio1: dma
+/dev/uio2: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio3: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio4: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio5: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio6: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio7: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio8: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio9: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio10: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio11: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio12: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio13: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/mem
+EMAX7[0].DEPTH=64
+EMAX7[1].DEPTH=64
+EMAX7: NLANE=2 DEPTH=64
+membase: 00000000
+in  : 00000000
+ker : 08000000
+out0: 080d8000
+out1: 0c0d8000
+sizeof(int)=4
+sizeof(float)=4
+input is: 
+0.779514 0.613175 0.445704 0.818723 0.570765 0.895547 0.732256 0.391722 0.287036 0.465946 
+ker is: 
+0.360430 0.894845 0.858336 0.387201 0.865010 0.898461 0.534966 0.828532 0.785284 0.228809 
+LANE0 usec: ARM:0 DRAIN:0 CONF:0 REGV:0 RANGE:0 LOAD:0 EXEC:0 total:0
+start_time: 0
+<<<IMAX>>>
+LANE0 usec: ARM:41429 DRAIN:5717826 CONF:15311 REGV:1048950 RANGE:721494 LOAD:4257820 EXEC:4860844 total:16663677
+out1 is: 
+4160:2.494905e+01 4161:1.071598e+01 4162:2.633338e+01 4163:1.127431e+01 4164:2.687416e+01 4165:1.158403e+01 4166:2.547445e+01 4167:1.156119e+01 4168:2.609677e+01 4169:1.151373e+01 
+Num of MULT: orig=0 imax=0
+Failed to open file for out writing.
+LANE0 usec: ARM:41429 DRAIN:5717826 CONF:15311 REGV:1048950 RANGE:721494 LOAD:4257820 EXEC:4860844 total:16663677
+
+CONV_SELECT= 10
+check1 IC 64 OC 32 D 128 H 128 W 128 K 3
+check2 RMGRP 16 NCHIP 1 IMAP 2
+/dev/uio14: emax6
+/dev/uio15: emax6
+/dev/uio0: dma
+/dev/uio1: dma
+/dev/uio2: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio3: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio4: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio5: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio6: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio7: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio8: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio9: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio10: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio11: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio12: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio13: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/mem
+EMAX7[0].DEPTH=64
+EMAX7[1].DEPTH=64
+EMAX7: NLANE=2 DEPTH=64
+membase: 00000000
+in  : 00000000
+ker : 20000000
+out0: 20036000
+out1: 30036000
+sizeof(int)=4
+sizeof(float)=4
+input is: 
+0.422250 0.625513 0.374877 0.974571 0.488316 0.151070 0.907370 0.824040 0.301186 0.929410 
+ker is: 
+0.677821 0.585600 0.791928 0.542970 0.172022 0.233932 0.349111 0.827170 0.501276 0.847326 
+LANE0 usec: ARM:0 DRAIN:0 CONF:0 REGV:0 RANGE:0 LOAD:0 EXEC:0 total:0
+start_time: 0
+<<<IMAX>>>
+LANE0 usec: ARM:44344 DRAIN:8976946 CONF:15592 REGV:1066312 RANGE:733900 LOAD:7171895 EXEC:8392957 total:26401950
+out1 is: 
+16512:3.089765e+01 16513:1.541242e+01 16514:3.233604e+01 16515:1.587527e+01 16516:2.796999e+01 16517:1.426656e+01 16518:2.793591e+01 16519:1.479605e+01 16520:2.883614e+01 16521:1.583952e+01 
+Num of MULT: orig=0 imax=0
+Failed to open file for out writing.
+LANE0 usec: ARM:44344 DRAIN:8976946 CONF:15592 REGV:1066312 RANGE:733900 LOAD:7171895 EXEC:8392957 total:26401950
+
+CONV_SELECT= 11
+check1 IC 32 OC 16 D 128 H 128 W 128 K 3
+check2 RMGRP 16 NCHIP 1 IMAP 2
+/dev/uio14: emax6
+/dev/uio15: emax6
+/dev/uio0: dma
+/dev/uio1: dma
+/dev/uio2: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio3: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio4: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio5: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio6: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio7: dma
+fd_dma_found > EMAX_NLANE || fd_dma_found > given_NLANE (skip)
+/dev/uio8: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio9: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio10: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio11: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio12: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/uio13: axi_mm2s_mapper
+emax7_found > EMAX_NLANE || emax7_found > given_NLANE (skip)
+/dev/mem
+EMAX7[0].DEPTH=64
+EMAX7[1].DEPTH=64
+EMAX7: NLANE=2 DEPTH=64
+membase: 00000000
+in  : 00000000
+ker : 10000000
+out0: 1000d800
+out1: 1800d800
+sizeof(int)=4
+sizeof(float)=4
+input is: 
+0.020565 0.787352 0.342013 0.117788 0.620723 0.797627 0.371882 0.383316 0.072037 0.586318 
+ker is: 
+0.967876 0.767175 0.928597 0.156571 0.743475 0.504469 0.561787 0.684541 0.311859 0.741652 
+LANE0 usec: ARM:0 DRAIN:0 CONF:0 REGV:0 RANGE:0 LOAD:0 EXEC:0 total:0
+start_time: 0
+<<<IMAX>>>
+LANE0 usec: ARM:12524 DRAIN:2245759 CONF:3953 REGV:267151 RANGE:183382 LOAD:2011546 EXEC:2054665 total:6778981
+out1 is: 
+16512:2.398050e+01 16513:1.459666e+01 16514:2.469689e+01 16515:1.361269e+01 16516:1.998396e+01 16517:1.231916e+01 16518:2.239037e+01 16519:1.319563e+01 16520:2.617430e+01 16521:1.278887e+01 
+Num of MULT: orig=0 imax=0
+Failed to open file for out writing.
+LANE0 usec: ARM:12524 DRAIN:2245759 CONF:3953 REGV:267151 RANGE:183382 LOAD:2011546 EXEC:2054665 total:6778981
+
